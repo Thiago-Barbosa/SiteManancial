@@ -1,4 +1,159 @@
-* {
-  margin: 0px;
-  padding: 0px;
+*{
+	margin: 0;
+	padding: 0;
+} /* Reset */
+
+a{
+	text-decoration: none;
 }
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato/lato-regular-webfont.woff2') format('woff2'),
+         url('lato/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	overflow-x: hidden; /* impede rolagem horizontal */
+	padding-top: 100px;
+}
+
+.header {
+	background-color: #fff;
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	box-shadow: 0 0 3px 3px rgba(50,50,50,0.06);
+}
+
+.logo {
+	background-image:url(img/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 80px;
+	float: left;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10%; /* Sangria */
+}  
+
+nav {/* menu padrão*/
+
+	margin-top: 32px;
+	float: right;
+	display: inline-block; /* visivel apenas em desktop */ 
+	font-family: "latoregular", "Lato Regular", sans-serif;
+	margin-right: 10%; /* Sangria */
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding: 10px
+
+}
+
+li > a {
+	color: #777;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s linear; 	/* tipo (local ou tudo), tempo, tipo da animação */
+}
+
+li > a:hover {
+	color: #ff8c00;
+	border-bottom: 2px solid #ff8c00;
+}
+
+.placeholder {
+	width: 100vw;
+	height: 400px;
+	background-color: #0084ff;
+}
+
+/* menu para mobile */
+#trigger {
+  display: none; }
+
+.trigger-label {
+  cursor: pointer;
+  float: right;
+  display: none; /* apenas visivel para mobile */
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-image: url(img/menu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  margin-right: 10%; /* Sangria */ 
+}
+
+.triggered-element {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background-color: #ecf0f1;
+  right: -25%;
+  top: 100px; }
+
+.triggered-title {
+  text-align: center;
+  display: block;
+  float: none;
+  height: 20px;
+  padding: 15px 25px;
+  background: transparent;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: "latoregular", "Lato Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #6638a0; }
+
+.triggered-option {
+  
+  float: right;
+  clear: both;
+  background: transparent;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-family: "latoregular", "Lato Regular", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #6638a0; }
+
+.triggered-source {
+	position: absolute;
+	right: 25px;
+  margin-top: 40px;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+#trigger:not(checked) ~ .triggered-element {
+  right: -25%;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s; }
+
+#trigger:checked ~ .triggered-element {
+  right: 0px;
+  opacity: 1; }
+  /* menu para mobile */
