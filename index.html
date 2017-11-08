@@ -6,25 +6,73 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-<!-- header -->
-<header class="header">
-<!--LOGO-->
-	<div classe="logo"><img src="img/Logo_site.png"/></div>
-<!--/LOGO-->
-<!--NAV-->
-	<nav>
-          <ul>   
-	    <li><a class="scroll" href="#HOME"onclick="marcacao (this);">HOME</a></li>
-	    <li><a class="scroll" href="#HISTÓRIA"onclick="marcacao (this);">HISTÓRIA</a></li>
-	    <li><a class="scroll" href="#SERVIÇO"onclick="marcacao (this);">SERVIÇO</a></li>
-	    <li><a class="scroll" href="#INSTALACOES"onclick="marcacao (this);">INSTALAÇÕES</a></li>
-	    <li><a class="scroll" href="#GALERIA"onclick="marcacao (this);">GALERIA</a></li>
-	    <li><a class="scroll" href="#AJUDE"onclick="marcacao (this);">AJUDE</a></li>
-	    <li><a class="scroll" href="#CONTATO"onclick="marcacao (this);">CONTATO</a></li>
-          </ul>
-	</nav>
-<!--/NAV-->
-</header>
-<!-- /header -->
+	<!-- header -->
+	<header class="header">
+		<!--LOGO-->
+		<a href="index.html"><div class="logo" alt="Logo"></div></a>
+		<!--/LOGO-->
+
+		<!--NAV-->
+		<nav>
+         	<ul>   
+	            <li><a class="scroll" href="#HOME"onclick="marcacao (this);">HOME</a></li>
+				<li><a class="scroll" href="#HISTÓRIA"onclick="marcacao (this);">HISTÓRIA</a></li>
+				<li><a class="scroll" href="#SERVIÇO"onclick="marcacao (this);">SERVIÇO</a></li>
+				<li><a class="scroll" href="#INSTALACOES"onclick="marcacao (this);">INSTALAÇÕES</a></li>
+				<li><a class="scroll" href="#GALERIA"onclick="marcacao (this);">GALERIA</a></li>
+				<li><a class="scroll" href="#AJUDE"onclick="marcacao (this);">AJUDE</a></li>
+				<li><a class="scroll" href="#CONTATO"onclick="marcacao (this);">CONTATO</a></li>
+          	</ul>
+		</nav>
+		<!--/NAV-->
+		<label for="trigger" class="trigger-label"></label> 
+	</header>
+	<!-- /header -->
+	<div class="placeholder">
+		
+	</div>
+<!--menu para mobile-->
+<input id="trigger" type="checkbox" value="open">
+
+
+<div class="triggered-element">
+  <p class="triggered-title">
+  MENU
+  </p>
+  
+  <div class="triggered-source">
+    <!-- INSERT YOUR MENU OPTIONS HERE -->
+    
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    HOME
+    </a>
+    
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    HISTÓRIA
+    </a>
+    
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    SERVIÇOS
+    </a>
+    
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    INSTALAÇÕES
+    </a>
+
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    GALERIA
+    </a>
+
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    AJUDE
+    </a>
+
+    <a class="triggered-option scroll" href="https://www.ermstudios.com" onclick="marcacao (this);">
+    CONTATO
+    </a>
+  </div>
+</div>
+<!--menu para mobile-->
+
 </body>
 </html>
