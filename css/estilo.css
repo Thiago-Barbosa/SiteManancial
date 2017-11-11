@@ -9,8 +9,8 @@ a{
 
 @font-face {
     font-family: 'latoregular';
-    src: url('lato/lato-regular-webfont.woff2') format('woff2'),
-         url('lato/lato-regular-webfont.woff') format('woff');
+    src: url('../thirdParty/lato/lato-regular-webfont.woff2') format('woff2'),
+         url('../thirdParty/lato/lato-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -34,7 +34,7 @@ body {
 
 .logo {
 	cursor: pointer;
-	background-image:url(img/logo.png);
+	background-image:url(../img/logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 200px;
@@ -103,7 +103,7 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 4px;
-  background-image: url(img/menu.png);
+  background-image: url(../img/menu.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 25px;
@@ -227,7 +227,7 @@ h2 {
 }
 
 .imagem_curso {
-	background-image:url(img/curso.jpeg);
+	background-image:url(../img/curso.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 40vw;
@@ -267,7 +267,7 @@ section{
 }
 
 .h2img {
-	background-image: url(img/predio.jpg);
+	background-image: url(../img/predio.jpg);
 	background-size: cover;/*A imagem fica no tamnaho do elemento em que ela se encontra*/
 	background-repeat: no-repeat;
 	background-position: center;
