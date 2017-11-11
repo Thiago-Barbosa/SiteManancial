@@ -18,21 +18,22 @@ a{
 
 body {
 	overflow-x: hidden; /* impede rolagem horizontal */
-	padding-top: 100px;
+	font-family: "latoregular", "Lato Regular", sans-serif;
 }
 
 .header {
-	background-color: #fff;
+	background-color: #ffffff;
 	width: 100vw;
 	height: 100px;
 	position: fixed;
 	left: 0px;
 	top: 0px;
-	z-index: 2;
+	z-index: 9999;
 	box-shadow: 0 0 3px 3px rgba(50,50,50,0.06);
 }
 
 .logo {
+	cursor: pointer;
 	background-image:url(img/logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -51,38 +52,45 @@ nav {/* menu padrão*/
 	display: inline-block; /* visivel apenas em desktop */ 
 	font-family: "latoregular", "Lato Regular", sans-serif;
 	margin-right: 10%; /* Sangria */
+	width: 636px;
+	height: auto; 
 }
 
 ul {
-
+	float: right;
 	list-style: none;
-
+	width: 100%; 
 }
 
-li {
-	display: inline-block;
-	float: left;
-	padding: 10px
 
-}
 
-li > a {
+.scroll {
 	color: #777;
 	padding-bottom: 5px;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #ffffff;
 	transition: all 0.5s linear; 	/* tipo (local ou tudo), tempo, tipo da animação */
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	cursor: pointer;
 }
 
-li > a:hover {
+.scroll:hover {
 	color: #ff8c00;
 	border-bottom: 2px solid #ff8c00;
 }
 
+.home-section {
+	padding-top: 100px;
+}
+
 .placeholder {
 	width: 100vw;
-	height: 400px;
-	background-color: #0084ff;
+	height: 48vh;
+	background-color: #000000;
 }
+
+
 
 /* menu para mobile */
 #trigger {
@@ -106,7 +114,7 @@ li > a:hover {
   width: 25%;
   height: 100%;
   position: fixed;
-  background-color: #ecf0f1;
+  background-color: #ECF0F1;
   right: -25%;
   top: 100px; }
 
@@ -157,3 +165,132 @@ li > a:hover {
   right: 0px;
   opacity: 1; }
   /* menu para mobile */
+
+/* acressentado dia 08/11/2017 */
+
+.frame {
+	width: calc(100vw - 20%);
+	min-height: calc(41vh + 35px);
+	height: auto;
+	padding: 0% 10%;
+	padding-bottom: 30px;
+}
+
+.up-frame {
+	width: calc(100vw - 20%);
+	height: 50vh;
+	padding: 0% 10%;
+	background: #555;	
+}
+
+.informativo {
+	background: #0084ff;
+	min-height: 41vh;
+}
+
+.cursos {
+  	width: 40vw;
+	height: 333px;
+    float: left;
+	display: inline-block;
+	margin-top: 13px;
+	
+}
+
+h1, h3, h4, h5, h6 {
+	color: #ff8c00;
+}
+
+h1 {
+  font-family: "latoregular", "Lato Regular", sans-serif;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+}
+
+h2 {
+  font-family: "latoregular", "Lato Regular", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  
+}
+
+.info {
+  font-family: "latoregular", "Lato Regular", sans-serif;
+  font-size: 16px; /* 14 é o tamanho mínimo para fonte na web */
+  color: #fff;
+  text-align: justify;
+  line-height: 24px;
+  margin-top: 25px;
+}
+
+.imagem_curso {
+	background-image:url(img/curso.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 333px;
+	float: right;
+	display: inline-block;
+	margin-top: 32px;
+}  
+
+.btn_default {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  float: left;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.btn_default:hover {
+  padding: 10px 20px;
+}
+
+.btn_default:active {
+  opacity: 0.5;
+}
+
+/* acressentado dia 08/11/2017 */
+
+section{
+	width: 100vw;
+	background: transparent;
+
+}
+
+.h2img {
+	background-image: url(img/predio.jpg);
+	background-size: cover;/*A imagem fica no tamnaho do elemento em que ela se encontra*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.wrapH3 {
+	width: 40%;
+	height: auto;
+	float: left;
+}
+
+.wrapH3 > h3{
+	float: right;
+	margin-top: 40px;
+	font-size: 48px;
+}
+
+.texto-historia {
+	float: right;
+	width: 50%;
+	margin-top: 40px;
+	text-align: justify;
+	line-height: 24px;
+	font-size: 16px;
+	padding-bottom: 25px;
+}
