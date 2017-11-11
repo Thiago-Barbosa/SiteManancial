@@ -52,13 +52,13 @@
 
 /* Define your images here! */
 .image1 {
-  background-image: url(img/slides/slide1.jpg);
+  background-image: url(../img/slides/slide1.jpg);
 }
 
 .image2 {
-  background-image: url(img/slides/slide2.jpg);
+  background-image: url(../img/slides/slide2.jpg);
 }
 
 .image3 {
-  background-image: url(img/slides/slide3.jpg);
+  background-image: url(../img/slides/slide3.jpg);
 }
