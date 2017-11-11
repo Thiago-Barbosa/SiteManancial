@@ -2,35 +2,111 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+
 	<title>Centro Geriátrico Manancial</title>
+
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script src="scripts.js"></script>
+	<script src="slideshow.js"></script>
+	
+  
+	  
 </head>
 <body>
 	<!-- header -->
 	<header class="header">
 		<!--LOGO-->
-		<a href="index.html"><div class="logo" alt="Logo"></div></a>
+		<div class="logo"></div>
 		<!--/LOGO-->
 
 		<!--NAV-->
 		<nav>
          	<ul>   
-	            <li><a class="scroll" href="#HOME"onclick="marcacao (this);">HOME</a></li>
-				<li><a class="scroll" href="#HISTÓRIA"onclick="marcacao (this);">HISTÓRIA</a></li>
-				<li><a class="scroll" href="#SERVIÇO"onclick="marcacao (this);">SERVIÇO</a></li>
-				<li><a class="scroll" href="#INSTALACOES"onclick="marcacao (this);">INSTALAÇÕES</a></li>
-				<li><a class="scroll" href="#GALERIA"onclick="marcacao (this);">GALERIA</a></li>
-				<li><a class="scroll" href="#AJUDE"onclick="marcacao (this);">AJUDE</a></li>
-				<li><a class="scroll" href="#CONTATO"onclick="marcacao (this);">CONTATO</a></li>
+	            <li class="scroll home">HOME</li>
+				<li class="scroll historia">HISTÓRIA</li>
+				<li class="scroll servicos">SERVIÇOS</li>
+				<li class="scroll lugar">INSTALAÇÕES</li>
+				<li class="scroll galeria">GALERIA</li>
+				<li class="scroll ajude">AJUDE</li>
+				<li class="scroll contato">CONTATO</li>
           	</ul>
 		</nav>
 		<!--/NAV-->
 		<label for="trigger" class="trigger-label"></label> 
 	</header>
 	<!-- /header -->
-	<div class="placeholder">
+	<section class="home-section"><!--home-section-->
 		
-	</div>
+		<div class="slider">
+			<!-- DEFINIR IMAGENS COMO CSS -->
+			<div class="image1"><button>teste</button></div>
+			<div class="image2"></div>
+			<div class="image3"></div>
+			
+			<div class="counterDesk">
+				<button class="counter s1 active"></button>
+				<button class="counter s2"></button>
+				<button class="counter s3"></button>
+			</div>
+		</div>
+		
+		<div class="frame informativo"><!--informativo-->
+			<div class="cursos">
+			  <h1>OFERECEMOS CURSOS LIVRE:</h1>
+	      		<H2>Cuidador de Idosos</H2>
+	      		<p class="info">
+		      		Local da inscrição: Centro Geriátrico Manancial
+		      		<br>
+		      		Endereço: Av. Santa Cruz n9910 -Santíssimo
+		      		<br>
+		      		Horário: De 09:00 às 17:00 horas
+		      		<br>
+		      		Informações: 3463-8959
+	      		</p>
+	      		<button class="btn_default goto_contato">Saiba mais</button>
+			</div>
+			<div class="imagem_curso"></div>
+		</div><!--/informativo-->
+	</section><!--/home-section-->
+
+	<section class="historia-section"><!--historia-section-->
+		<div class="up-frame h2img"></div>
+			<div class="frame">
+				<div class="wrapH3"><h3>HISTÓRIA</h3></div>
+				<p class="texto-historia">O Centro Geriátrico Manancial é uma instituição de longa permanência para idosos - ILPI fundada em 17/09/2004. Tem por finalidade prestar assistência à Terceira Idade de uma forma geral no campo de Assistência Social e da promoção humana, proporcionando assistência material, moral, intelectual, social e espiritual, em condições de liberdade e dignidade, visando a preservação da saúde física e mental de cada atendido.
+				<br><br>
+	   			Na casa, os idosos participam de atividades recreativas e lúdicas e recebem acompanhamento intensivo, 24 horas por dia, todos os dias da semana, por meio dos cuidadores e enfermeiras. Recebem ainda consulta médica periodicamente, acompanhamento nutricional especializado e tratamento com médicos de diversas especialidades, conforme necessidade de cada idoso.  </p>
+	   		</div>
+	</section><!--/historia-section-->
+
+	<section class="servicos-section"><!--servicos-section-->
+		<div class="up-frame s3img"></div>
+			<div class="frame">
+				<div class="wrapH"><h1>HISTÓRIA</h1></div>
+				<p class="texto-historia">O Centro Geriátrico Manancial é uma instituição de longa permanência para idosos - ILPI fundada em 17/09/2004. Tem por finalidade prestar assistência à Terceira Idade de uma forma geral no campo de Assistência Social e da promoção humana, proporcionando assistência material, moral, intelectual, social e espiritual, em condições de liberdade e dignidade, visando a preservação da saúde física e mental de cada atendido.
+				<br><br>
+	   			Na casa, os idosos participam de atividades recreativas e lúdicas e recebem acompanhamento intensivo, 24 horas por dia, todos os dias da semana, por meio dos cuidadores e enfermeiras. Recebem ainda consulta médica periodicamente, acompanhamento nutricional especializado e tratamento com médicos de diversas especialidades, conforme necessidade de cada idoso.  </p>
+	   		</div>
+	</section><!--/servicos-section-->
+
+	<section class="lugar-section"><!--lugar-section-->
+		
+	</section><!--/lugar-section-->
+
+	<section class="galeria-section"><!--galeria-section-->
+		
+	</section><!--/galeria-section-->
+
+	<section class="ajude-section"><!--ajude-section-->
+		
+	</section><!--/ajude-section-->
+
+	<section class="contato-section"><!--contato-section-->
+		<script type="text/javascript" src="https://form.jotform.co/jsform/73128748967877"></script>
+	</section><!--/contato-section-->
+
 <!--menu para mobile-->
 <input id="trigger" type="checkbox" value="open">
 
@@ -73,6 +149,5 @@
   </div>
 </div>
 <!--menu para mobile-->
-
 </body>
 </html>
